@@ -20,14 +20,8 @@ npx hardhat run scripts/AirDropV1/1_deploy_token.js --network testnet
 copy contract address from 3 and save in .env
 QRC20_TOKEN = "YOUR-CONTRACT-ADDRESS"
 
-contract address in my own case: 0x1918DA6AFCef91c84df83BF08a4213E5d3A92A3C
-0x8f52D6166064193fE794F7eD041dE2E3E60adFE5
-
 4. Set up and copy DAO Registry address from https://factory.q-dao.tools/
 DAO_REGISTRY_ADDRESS = "YOUR-DAO-REGISTRY-ADDRESS"
-
-DAO_REGISTRY_ADDRESS = 0xE206da01E3271B7f208603C830EB2F432Bf44Ab9
-0x5FF2E1B2778D242fd8aceFAe73F79589f496a613
 
 Information about potential errors: You may encounter any of the following common errors, let me explain how you can resolve them:ProviderError: Insufficient funds for gas * price + value ⇒ Use the Q faucet at faucet.qtestnet.org to claim tokens to the wallet/private key you use for deploying the code.Error: Factory runner does not support sending transactions ⇒ There is a typo in your private key in the .env file, or the .env file with the private key is not in the right directory (should be in the root directory Q-boilerplate-code.)
 
@@ -37,21 +31,17 @@ Information about potential errors: You may encounter any of the following commo
 npx hardhat run scripts/AirDropV1/2_deploy_airdropV1.js --network testnet
 
 Copy address
-AirDropV1 address =0x4387d02fBEc528DEAf9E0e3f1f84606A48Aa3fdc
-0x95aFf38fEb769f052E4f2589e75529767ECbbc64
-
+AirDropV1 address =
 
 7. Claim the AirDrop Module
 npx hardhat run scripts/AirDropV1/3_claim.js --network testnet
-0x5CFb4D18bAfDb4A7E9663cf8CE87dB149D5611B3
-
+__________________________
 Airdrop2 Better Version
 __________________________
 1. Deploy Airdropv2 module using:
 npx hardhat run scripts/AirDropV2/1_deploy_airdropV2.js --network testnet
 
-AirDrop V2 deployed to: 0x1AfFe640D624dE33300D364C86BdD90A96B5F338
-0x30262519836D1cC1342e1770b6A47d0F614518C1
+AirDrop V2 deployed to:
 
 2. Create voting situation for DAO
 npx hardhat run scripts/AirDropV2/2_createVoting.js --network testnet
