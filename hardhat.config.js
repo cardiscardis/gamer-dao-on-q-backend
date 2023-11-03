@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-web3");
 require("@nomiclabs/hardhat-truffle5");
+require("@nomiclabs/hardhat-ethers")
 require('crypto');
 require('@openzeppelin/hardhat-upgrades');
 require("@dlsl/hardhat-migrate");

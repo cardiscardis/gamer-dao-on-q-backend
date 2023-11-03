@@ -4,6 +4,79 @@
   "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOParameterStorage.sol",
   "abi": [
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            },
+            {
+              "internalType": "enum ParameterType",
+              "name": "solidityType",
+              "type": "uint8"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct Parameter",
+          "name": "parameter",
+          "type": "tuple"
+        }
+      ],
+      "name": "ParameterAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            },
+            {
+              "internalType": "enum ParameterType",
+              "name": "solidityType",
+              "type": "uint8"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct Parameter",
+          "name": "parameter",
+          "type": "tuple"
+        }
+      ],
+      "name": "ParameterChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "parameterName",
+          "type": "string"
+        }
+      ],
+      "name": "ParameterRemoved",
+      "type": "event"
+    },
+    {
       "inputs": [
         {
           "internalType": "address",

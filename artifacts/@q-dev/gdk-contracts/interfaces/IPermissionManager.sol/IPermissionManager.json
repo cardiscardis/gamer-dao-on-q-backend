@@ -133,12 +133,6 @@
         },
         {
           "indexed": false,
-          "internalType": "string",
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "indexed": false,
           "internalType": "address",
           "name": "linkedMemberStorage",
           "type": "address"
@@ -203,11 +197,6 @@
           "type": "address"
         },
         {
-          "internalType": "string",
-          "name": "name_",
-          "type": "string"
-        },
-        {
           "internalType": "contract DAOMemberStorage",
           "name": "linkedMemberStorage_",
           "type": "address"
@@ -222,11 +211,6 @@
       "inputs": [
         {
           "components": [
-            {
-              "internalType": "string",
-              "name": "name",
-              "type": "string"
-            },
             {
               "internalType": "address",
               "name": "target",
@@ -464,11 +448,6 @@
       "outputs": [
         {
           "components": [
-            {
-              "internalType": "string",
-              "name": "name",
-              "type": "string"
-            },
             {
               "internalType": "address",
               "name": "target",

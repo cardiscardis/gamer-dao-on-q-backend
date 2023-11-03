@@ -47,6 +47,19 @@
         {
           "indexed": true,
           "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "ConstitutionSigned",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
           "name": "tokenAddress",
           "type": "address"
         },
@@ -344,6 +357,37 @@
           "internalType": "address",
           "name": "userAddress_",
           "type": "address"
+        }
+      ],
+      "name": "getUserConstitutionData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "isSigned",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "signedAt",
+              "type": "uint128"
+            }
+          ],
+          "internalType": "struct IDAOVault.ConstitutionData",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress_",
+          "type": "address"
         },
         {
           "internalType": "address",
@@ -504,6 +548,24 @@
         }
       ],
       "name": "revokeSBTAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "signer_",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature_",
+          "type": "bytes"
+        }
+      ],
+      "name": "signConstitution",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"

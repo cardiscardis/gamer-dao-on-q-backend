@@ -226,6 +226,31 @@
     },
     {
       "inputs": [],
+      "name": "getRegistryContractAddresses",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "address_",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IDAORegistry.RegistryEntry[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
       "name": "getResource",
       "outputs": [
         {
